@@ -101,6 +101,28 @@ figure {
       -o-transform: translateX(-270px);
       transform: translateX(-270px);
       padding-top: 4em; } }
+
+      .colorlib-logo-mobile {
+        text-align: center;
+        font-weight: 400;
+        font-size: 0px;
+        text-transform: uppercase;
+        margin-bottom:0em;
+        display: block;
+        width: 100%;
+        font-family: "Montserrat", Arial, sans-serif; }
+        @media screen and (max-width: 768px) {
+      .colorlib-logo-mobile {
+        font-weight: 400;
+        font-size: 22px;
+            margin-top: 1em;
+           } }
+      .colorlib-logo-mobile a {
+          display: inline-block;
+          text-align: center;
+          color: #000;
+          letter-spacing: 10px; }
+
   #colorlib-aside #colorlib-logo-line0 {
     text-align: right;
     font-weight: 400;
@@ -118,6 +140,7 @@ figure {
       text-align: center;
       color: #000;
       letter-spacing: 10px; }
+
   #colorlib-aside #colorlib-logo {
     text-align: right;
     font-weight: 400;
