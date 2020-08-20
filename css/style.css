@@ -555,16 +555,49 @@ body.offcanvas {
           border-radius: 30px; }
         .blog-entry .blog-img .desc.desc2 h2 {
           margin-bottom: 30px; }
-    .blog-entry .blog-img.blog-img2 {
+    .blog-entry .blog-img.blog-img-small-portrait {
       height: 235px;
       margin-bottom: 30px; }
       @media screen and (max-width: 768px) {
-        .blog-entry .blog-img.blog-img2 {
-          height: 400px; } }
-      .blog-entry .blog-img.blog-img2 h2.head-article {
+        .blog-entry .blog-img.blog-img-small-portrait {
+          height: 570px; } }
+      .blog-entry .blog-img.blog-img-small-portrait h2.head-article {
         font-size: 20px; }
-      .blog-entry .blog-img.blog-img2 p {
+      .blog-entry .blog-img.blog-img-small-portrait p {
         margin-bottom: 5px; }
+
+    .blog-entry .blog-img.blog-img-small-landscape {
+      height: 235px;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 768px) {
+        .blog-entry .blog-img.blog-img-small-landscape {
+          height: 400px; } }
+      .blog-entry .blog-img.blog-img-small-landscape h2.head-article {
+        font-size: 20px; }
+      .blog-entry .blog-img.blog-img-small-landscape p {
+        margin-bottom: 5px; }
+
+    .blog-entry .blog-img.blog-portrait {
+      height: 500px;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 768px) {
+        .blog-entry .blog-img.blog-portrait {
+          height: 700px; } }
+      .blog-entry .blog-img.blog-portrait h2.head-article {
+        font-size: 20px; }
+      .blog-entry .blog-img.blog-portrait p {
+        margin-bottom: 5px; }
+
+    .blog-entry .blog-img.blog-portrait-mid {
+          height: 500px;
+          margin-bottom: 30px; }
+          @media screen and (max-width: 768px) {
+            .blog-entry .blog-img.blog-portrait-mid {
+              height: 600px; } }
+          .blog-entry .blog-img.blog-portrait-mid h2.head-article {
+            font-size: 20px; }
+          .blog-entry .blog-img.blog-portrait-mid p {
+            margin-bottom: 5px; }
 
 .blog-entry-style {
   z-index: 0;
