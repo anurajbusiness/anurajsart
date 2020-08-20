@@ -460,7 +460,7 @@ body.offcanvas {
   display: block; }
   @media screen and (max-width: 768px) {
     .colorlib-blog {
-      padding-top: 5em;
+      padding-top: 2em;
       padding-bottom: 8em; } }
 
 .content-wrap {
