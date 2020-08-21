@@ -622,15 +622,29 @@ body.offcanvas {
           .blog-entry .blog-img.blog-portrait-mid p {
             margin-bottom: 5px; }
 
+    .blog-entry .blog-img.blog-portrait-contact {
+          height: 300px;
+          margin-bottom: 15px; }
+          @media screen and (max-width: 768px) {
+            .blog-entry .blog-img.blog-portrait-contact {
+              height: 350px; } }
+          .blog-entry .blog-img.blog-portrait-contact h2.head-article {
+            font-size: 30px;
+            font-weight: 450;
+            margin-bottom: 120px;}
+          .blog-entry .blog-img.blog-portrait-contact p {
+            margin-bottom: 3px; }
+
+
       .blog-entry .blog-img.contact-heading {
         height: 100px;
-       margin-bottom: 14px; }
+       margin-bottom: 7px; }
         @media screen and (max-width: 768px) {
           .blog-entry .blog-img.contact-heading {
             height: 90px;
             } }
         .blog-entry .blog-img.contact-heading h2.head-article {
-          font-size: 22px;
+          font-size: 17px;
       }@media screen and (max-width: 768px) {
         .blog-entry .blog-img.contact-heading h2.head-article {
           vertical-align: middle;
