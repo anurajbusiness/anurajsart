@@ -594,11 +594,32 @@ body.offcanvas {
       margin-bottom: 30px; }
       @media screen and (max-width: 768px) {
         .blog-entry .blog-img.blog-img-small-landscape {
-          height: 400px; } }
+          height: 400px;
+      } }
       .blog-entry .blog-img.blog-img-small-landscape h2.head-article {
         font-size: 20px; }
       .blog-entry .blog-img.blog-img-small-landscape p {
         margin-bottom: 5px; }
+
+    /* about secion tiles */
+
+    .blog-entry .blog-img.about-small {
+      height: 235px;
+      margin-bottom: 30px; }
+      @media screen and (max-width: 768px) {
+        .blog-entry .blog-img.about-small {
+          height: 400px; } }
+      .blog-entry .blog-img.about-small h2.head-article {
+        font-size: 20px; }
+      .blog-entry .blog-img.about-small p {
+        margin-bottom: 5px; }
+      @media screen and (max-width: 768px) {
+      .blog-entry .blog-img.about-small h2.head-article {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 450;
+        }}
+
 
     .blog-entry .blog-img.blog-portrait {
       height: 500px;
@@ -624,7 +645,7 @@ body.offcanvas {
 
     .blog-entry .blog-img.blog-portrait-contact {
           height: 300px;
-          margin-bottom: 15px; }
+          margin-bottom: 10px; }
           @media screen and (max-width: 768px) {
             .blog-entry .blog-img.blog-portrait-contact {
               height: 350px; } }
@@ -637,20 +658,20 @@ body.offcanvas {
 
 
       .blog-entry .blog-img.contact-heading {
-        height: 100px;
+        height: 97px;
        margin-bottom: 7px; }
         @media screen and (max-width: 768px) {
           .blog-entry .blog-img.contact-heading {
             height: 90px;
             } }
-        .blog-entry .blog-img.contact-heading h2.head-article {
+      .blog-entry .blog-img.contact-heading h2.head-article {
           font-size: 17px;
       }@media screen and (max-width: 768px) {
-        .blog-entry .blog-img.contact-heading h2.head-article {
+      .blog-entry .blog-img.contact-heading h2.head-article {
           vertical-align: middle;
           text-align: center;
           font-size: 14px;
-        }
+        }}
 
 .blog-entry-style {
   z-index: 0;
