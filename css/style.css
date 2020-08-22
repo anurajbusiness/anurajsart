@@ -578,6 +578,9 @@ body.offcanvas {
           border-radius: 30px; }
         .blog-entry .blog-img .desc.desc2 h2 {
           margin-bottom: 30px; }
+
+    /* Small */
+    
     .blog-entry .blog-img.blog-img-small-portrait {
       height: 235px;
       margin-bottom: 30px; }
