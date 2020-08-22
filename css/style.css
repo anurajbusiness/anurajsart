@@ -610,14 +610,14 @@ body.offcanvas {
         .blog-entry .blog-img.about-small {
           height: 400px; } }
       .blog-entry .blog-img.about-small h2.head-article {
-        font-size: 20px; }
+        font-size: 18px; }
       .blog-entry .blog-img.about-small p {
         margin-bottom: 5px; }
       @media screen and (max-width: 768px) {
       .blog-entry .blog-img.about-small h2.head-article {
           text-align: center;
           font-size: 22px;
-          font-weight: 450;
+          font-weight: 350;
         }}
 
 
