@@ -103,13 +103,13 @@ figure {
       padding-top: 4em; } }
 
       .colorlib-logo-mobile {
-        text-align: center;
+        text-align: right;
         font-weight: 400;
         font-size: 0px;
         text-transform: uppercase;
-        margin-bottom:0em;
+        margin-bottom: 0em;
         display: block;
-        width: 100%;
+        width: 97%;
         font-family: "Montserrat", Arial, sans-serif; }
         @media screen and (max-width: 768px) {
       .colorlib-logo-mobile {
@@ -119,7 +119,7 @@ figure {
            } }
       .colorlib-logo-mobile a {
           display: inline-block;
-          text-align: center;
+          text-align: right;
           color: #000;
           letter-spacing: 10px; }
 
@@ -580,7 +580,7 @@ body.offcanvas {
           margin-bottom: 30px; }
 
     /* Small */
-    
+
     .blog-entry .blog-img.blog-img-small-portrait {
       height: 235px;
       margin-bottom: 30px; }
