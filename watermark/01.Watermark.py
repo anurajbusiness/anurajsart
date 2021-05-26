@@ -43,6 +43,44 @@ for file in os.listdir(resize_folder_path):
         # print(os.path.join("/mydir", file))
         imageList.append(file)
 
+# def save4Images(img):
+    
+
+
+def applyWatermark(imgName):
+    # im1 = Image.open(resize_folder_output_path+'/'+imgName)
+    # watermark = Image.open('21.gif')
+    # im1 =  im1.paste(watermark)
+    # im1.save('abc.jpg')
+    # return img
+    im1 = Image.open(resize_folder_output_path+'/'+imgName)
+    imTemp = Image.open(resize_folder_output_path+'/'+imgName)
+    im2 = Image.open('33.png')
+    ximg,yimg=im1.size[0],im1.size[1]
+    ximg2,yimg2=im2.size[0],im2.size[1]
+
+    margin = 35
+
+    areaBox = (margin, margin)  
+    im1.paste(im2,areaBox,im2)
+    im1.save(resize_folder_output_path+'/'+imgName+"a.jpg")
+
+    im1 = Image.open(resize_folder_output_path+'/'+imgName)
+    areaBox = (margin, yimg - margin - yimg2)  
+    im1.paste(im2,areaBox,im2)
+    im1.save(resize_folder_output_path+'/'+imgName+"b.jpg")
+
+    im1 = Image.open(resize_folder_output_path+'/'+imgName)
+    areaBox = (ximg - margin - ximg2, margin)  
+    im1.paste(im2,areaBox,im2)
+    im1.save(resize_folder_output_path+'/'+imgName+"c.jpg")
+
+
+    im1 = Image.open(resize_folder_output_path+'/'+imgName)
+    areaBox = (ximg - margin - ximg2, yimg - margin - yimg2)  
+    im1.paste(im2,areaBox,im2)
+    im1.save(resize_folder_output_path+'/'+imgName+"d.jpg")
+
 # 1. Resize Orignal Image ........................................
 
 ctr = 0
@@ -53,7 +91,7 @@ for img_name in imageList:
     # image = getResizedValues(image)  
     image = getResizedValues(image)
     image.save(resize_folder_output_path+'/'+img_name, 'JPEG', quality=quality_val)
-
+    applyWatermark(img_name)
 
 
 
