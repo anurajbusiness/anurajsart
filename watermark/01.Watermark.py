@@ -3,8 +3,8 @@ import os
 # create Image object with the input image
 
 # resize_folder_path = 'C:/Users/tanan/Google Drive/Insta Pics/1RawPics'
-resize_folder_path = '2021'
-resize_folder_output_path = 'Output'
+resize_folder_path = '1.Source'
+resize_folder_output_path = '2.Output'
 quality_val = 35
 rez4k = 2163
 
@@ -18,24 +18,6 @@ def getResizedValues(tempImage):
         y = rez4k
     return tempImage.resize((int(x), int(y)), Image.ANTIALIAS)
 
-# def getResizedValues(tempImage):
-#     aspectRatio = 2.01653333333
-#     aspectWidth = rez4k/aspectRatio
-#     tempImage=getResizedValues(tempImage)
-#     x,y=tempImage.size[0],tempImage.size[1]
-#     print(x,y)
-
-#     #Give Top Left Corner
-#     left = (rez4k-aspectWidth)/2
-#     top = 0
-    
-#     #Give Bottom Right Corner
-#     right = left + aspectWidth
-#     bottom = rez4k
-    
-#     tempImage = tempImage.crop((int(left), int(top), int(right), int(bottom)))
-#     return tempImage
-
 imageList = [];
 for file in os.listdir(resize_folder_path):
     if file.endswith(".jpg") or file.endswith(".jpeg"):
@@ -46,7 +28,6 @@ for file in os.listdir(resize_folder_path):
 # def save4Images(img):
     
 
-
 def applyWatermark(imgName):
     # im1 = Image.open(resize_folder_output_path+'/'+imgName)
     # watermark = Image.open('21.gif')
@@ -56,30 +37,33 @@ def applyWatermark(imgName):
     im1 = Image.open(resize_folder_output_path+'/'+imgName)
     imTemp = Image.open(resize_folder_output_path+'/'+imgName)
     im2 = Image.open('33.png')
-    ximg,yimg=im1.size[0],im1.size[1]
-    ximg2,yimg2=im2.size[0],im2.size[1]
+    ximg, yimg = im1.size[0], im1.size[1]
+    ximg2, yimg2 = im2.size[0], im2.size[1]
 
     margin = 35
 
-    areaBox = (margin, margin)  
-    im1.paste(im2,areaBox,im2)
-    im1.save(resize_folder_output_path+'/'+imgName+"a.jpg")
+    areaBox = (margin, margin)
+    im1.paste(im2, areaBox, im2)
+    im1.save(resize_folder_output_path+'/'+imgName.split('.')[0]+"a.jpg", quality=quality_val)
 
     im1 = Image.open(resize_folder_output_path+'/'+imgName)
-    areaBox = (margin, yimg - margin - yimg2)  
-    im1.paste(im2,areaBox,im2)
-    im1.save(resize_folder_output_path+'/'+imgName+"b.jpg")
+    areaBox = (margin, yimg - margin - yimg2)
+    im1.paste(im2, areaBox, im2)
+    im1.save(resize_folder_output_path+'/'+imgName.split('.')[0]+"b.jpg", quality=quality_val)
 
     im1 = Image.open(resize_folder_output_path+'/'+imgName)
-    areaBox = (ximg - margin - ximg2, margin)  
-    im1.paste(im2,areaBox,im2)
-    im1.save(resize_folder_output_path+'/'+imgName+"c.jpg")
-
+    areaBox = (ximg - margin - ximg2, margin)
+    im1.paste(im2, areaBox, im2)
+    im1.save(resize_folder_output_path+'/'+imgName.split('.')[0]+"c.jpg", quality=quality_val)
 
     im1 = Image.open(resize_folder_output_path+'/'+imgName)
-    areaBox = (ximg - margin - ximg2, yimg - margin - yimg2)  
-    im1.paste(im2,areaBox,im2)
-    im1.save(resize_folder_output_path+'/'+imgName+"d.jpg")
+    areaBox = (ximg - margin - ximg2, yimg - margin - yimg2)
+    im1.paste(im2, areaBox, im2)
+    im1.save(resize_folder_output_path+'/'+imgName.split('.')[0]+"d.jpg", quality=quality_val)
+
+    im1.close()
+    im2.close()
+    # os.remove(resize_folder_output_path+'/'+imgName)
 
 # 1. Resize Orignal Image ........................................
 
@@ -90,8 +74,10 @@ for img_name in imageList:
     image = Image.open(resize_folder_path+'/'+img_name)
     # image = getResizedValues(image)  
     image = getResizedValues(image)
-    image.save(resize_folder_output_path+'/'+img_name, 'JPEG', quality=quality_val)
+    image.save(resize_folder_output_path+'/'+img_name, 'JPEG', quality=70)
     applyWatermark(img_name)
+    image.close()
+    os.remove(resize_folder_output_path+'/'+img_name)
 
 
 
