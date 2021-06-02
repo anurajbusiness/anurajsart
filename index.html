@@ -14,10 +14,10 @@
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="Anuraj's Art" />
 	<meta property="og:image" content="https://github.com/anurajsart/anurajsart/blob/master/images/thumbnail2.jpg" />
-	<meta property="og:url" content="http://www.anurajsart.store"/>
-	<meta property="og:url" content="http://www.anurajsart.store/"/>
-	<meta property="og:url" content="http://anurajsart.store"/>
-	<meta property="og:url" content="http://anurajsart.store/"/>
+	<meta property="og:url" content="http://www.anurajsart.store" />
+	<meta property="og:url" content="http://www.anurajsart.store/" />
+	<meta property="og:url" content="http://anurajsart.store" />
+	<meta property="og:url" content="http://anurajsart.store/" />
 	<meta property="og:site_name" content="Anuraj's ART" />
 	<meta property="og:description" content="Collection of Colourful Paintings" />
 	<meta name="twitter:title" content="Anuraj's Art" />
@@ -53,7 +53,13 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+	<script src="js/jquery.fancybox.min.js"></script>
+
+
 </head>
+
 <body>
 	<div id="colorlib-page">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
@@ -63,13 +69,6 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li class="colorlib-active"><a href="index.html">Home</a></li>
-					<!-- <li><a href="style.html">Style</a></li>
-					<li><a href="fashion.html">Fashion</a></li>
-					<li><a href="travel.html">Travel</a></li>
-					<li><a href="sports.html">Sports</a></li> -->
-					<!-- <li><a href="video.html">Video</a></li> -->
-					<!-- <li><a href="archives.html">Archives</a></li> -->
-					<!-- <li><a href="gallery.html">Gallery</a></li> -->
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="NFT.html">NFT</a></li>
@@ -81,14 +80,16 @@
 			<div class="colorlib-footer">
 				<ul>
 					<li><a href="https://www.facebook.com/KumarAnuraj"><i class="icon-facebook2"></i></a></li>
-					<!-- <li><a href="#"><i class="icon-twitter2"></i></a></li> -->
 					<li><a href="https://www.instagram.com/amouranuraj/"><i class="icon-instagram"></i></a></li>
-					<li><a href="https://in.linkedin.com/in/anuraj-kumar-024bb958"><i class="icon-linkedin2"></i></a></li>
+					<li><a href="https://in.linkedin.com/in/anuraj-kumar-024bb958"><i class="icon-linkedin2"></i></a>
+					</li>
 				</ul>
 				<p><small>&copy;
-						Copyright &copy;<script>
+						Copyright &copy;
+						<script>
 							document.write(new Date().getFullYear());
-						</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a>
 			</div>
 		</aside>
 		<!-- Imporatnt for alignment  -->
@@ -98,7 +99,7 @@
 		<div id="colorlib-main">
 			<br>
 			<aside id="colorlib-hero">
-		
+
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
 						<li style="background-image: url(images/slides/Img4.jpg);">
@@ -126,7 +127,9 @@
 											<div class="desc">
 												<!-- <p class="tag"><span>Fashion</span></p> -->
 												<h1><a href="NFT.html">NFTs Available !</a></h1>
-												<a href="NFT.html"><p>Art now converted into Non fungable Tokens. See More</p></a>
+												<a href="NFT.html">
+													<p>Art now converted into Non fungable Tokens. See More</p>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -152,170 +155,56 @@
 					</ul>
 				</div>
 			</aside>
+
+
+			<!-- Image Tile Code Starts here.  -->
+
 			<!-- <h1 class="colorlib-logo-mobile"><a href="index.html">Anuraj's </br>Art</a></h1> -->
 			<div class="colorlib-blog">
 				<div class="container-wrap">
 					<!-- Line 0................................................................. -->
 					<div class="col-md-5">
-
 						<div class="blog-entry animate-box">
-							<div class="blog-img blog-portrait-mid" style="background-image: url(images/2021/Img1.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Sports</span></p> -->
-									<h2 class="head-article"><a href="images/2021/Img1.jpg" class="image-popup-link">Unary Sunset</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
+							<a data-fancybox="gallery" data-caption="Size : 60 cm x 40 cm, Medium : Acrylic on Canvas"
+								href="images/2021/Img1.jpg">
+								<div class="blog-img blog-portrait-mid"
+									style="background-image: url(images/2021/Img1.jpg)">
+									<div class="desc text-center">
+										<h2 class="head-article">Unary Sunset</h2>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
+
 						<div class="row">
-						<div class="col-md-5">
-							<div class="blog-entry animate-box">
-								<div class="blog-img blog-img-small-portrait" style="background-image: url(images/2021/Img2.jpg);">
-									<div class="desc text-center">
-										<!-- <p class="tag"><span>auto</span></p> -->
-										<h2 class="head-article"><a href="images/2021/Img2.jpg" class="image-popup-link">Waves</a></h2>
-										<!-- <p>Even the all-powerful Pointing has no control about</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7">
-							<div class="blog-entry animate-box">
-								<div class="blog-img blog-img-small-landscape" style="background-image: url(images/2021/Img3.jpg);">
-									<div class="desc text-center">
-										<!-- <p class="tag"><span>auto</span></p> -->
-										<h2 class="head-article"><a href="images/2021/Img3.jpg" class="image-popup-link">Eye</a></h2>
-										<!-- <p>Even the all-powerful Pointing has no control about</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-7">
-					<!-- small squares 	 -->
-					<div class="row">
-						<div class="col-md-5">
-							<div class="blog-entry animate-box">
-								<div class="blog-img blog-img-small-landscape" style="background-image: url(images/2021/Img4.jpg);">
-									<div class="desc text-center">
-										<!-- <p class="tag"><span>Place</span></p> -->
-										<h2 class="head-article"><a href="images/2021/Img4.jpg" class="image-popup-link">Vernazza, Cinque Terre</a></h2>
-										<!-- <p>Even the all-powerful Pointing has no control about</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-5">
-							<div class="blog-entry animate-box">
-								<div class="blog-img blog-img-small-landscape" style="background-image: url(images/2021/Img5.jpg);">
-									<div class="desc text-center">
-										<!-- <p class="tag"><span>Place</span></p> -->
-										<h2 class="head-article"><a href="images/2021/Img5.jpg" class="image-popup-link">White Palace</a></h2>
-										<!-- <p>Even the all-powerful Pointing has no control about</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-10">
-							<div class="blog-entry animate-box">
-								<div class="blog-img" style="background-image: url(images/2021/Img6.jpg);">
-									<div class="desc text-center">
-										<!-- <p class="tag"><span>Place</span></p> -->
-										<h2 class="head-article"><a href="images/2021/Img6.jpg" class="image-popup-link">Flamingo</a></h2>
-										<!-- <p>Even the all-powerful Pointing has no control about</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
-
-
-
-
-					<!-- Line 1 -->
-					<div class="col-md-5">
-						<div class="blog-entry animate-box">
-							<div class="h-25 blog-img" style="background-image: url(images/portrait/img8.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Movies</span></p> -->
-									<h2 class="head-article"><a href="images/portrait/img8.jpg" class="image-popup-link">Bleu cheveux</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="blog-entry animate-box">
-							<div class="blog-img" style="background-image: url(images/landscape/img3.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Healthy</span></p> -->
-									<h2 class="head-article"><a href="images/landscape/img3.jpg" class="image-popup-link">Walk to Home</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- line 2 -->
-					<div class="col-md-4">
-						<div class="blog-entry animate-box">
-							<div class="blog-img blog-portrait" style="background-image: url(images/portrait/img1.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Movies</span></p> -->
-									<h2 class="head-article"><a href="images/portrait/img1.jpg" class="image-popup-link">Venezia</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="blog-entry animate-box">
-							<div class="blog-img" style="background-image: url(images/landscape/img2.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Healthy</span></p> -->
-									<h2 class="head-article"><a href="images/landscape/img2.jpg" class="image-popup-link">Starry Night</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- line 3  and 4-->
-					<div class="col-md-5">
-
-							<div class="blog-entry animate-box">
-								<div class="blog-img blog-portrait-mid" style="background-image: url(images/portrait/img6.jpg);">
-									<div class="desc text-center">
-										<!-- <p class="tag"><span>Sports</span></p> -->
-										<h2 class="head-article"><a href="images/portrait/img6.jpg" class="image-popup-link">Ballerina</a></h2>
-										<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
-									</div>
-								</div>
-							</div>
-							<div class="row">
 							<div class="col-md-5">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-portrait" style="background-image: url(images/portrait/img12.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>auto</span></p> -->
-											<h2 class="head-article"><a href="images/portrait/img12.jpg" class="image-popup-link">Scream</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/2021/Img2.jpg">
+										<div class="blog-img blog-img-small-portrait"
+											style="background-image: url(images/2021/Img2.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Waves</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="col-md-7">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-landscape" style="background-image: url(images/landscape/img6.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>auto</span></p> -->
-											<h2 class="head-article"><a href="images/landscape/img6.jpg" class="image-popup-link">Sail</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/2021/Img3.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/2021/Img3.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Eye</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -325,35 +214,204 @@
 						<div class="row">
 							<div class="col-md-5">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-landscape" style="background-image: url(images/landscape/img9.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>Place</span></p> -->
-											<h2 class="head-article"><a href="images/landscape/img9.jpg" class="image-popup-link">Butterfly</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/2021/Img4.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/2021/Img4.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Vernazza, Cinque Terre</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="col-md-5">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-landscape" style="background-image: url(images/portrait/img11.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>Place</span></p> -->
-											<h2 class="head-article"><a href="images/portrait/img11.jpg" class="image-popup-link">Rose Beach</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/2021/Img5.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/2021/Img5.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">White Palace</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="col-md-10">
 								<div class="blog-entry animate-box">
-									<div class="blog-img" style="background-image: url(images/landscape/img4.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>Place</span></p> -->
-											<h2 class="head-article"><a href="images/landscape/img4.jpg" class="image-popup-link">Lighthouse</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/2021/Img6.jpg">
+										<div class="blog-img" style="background-image: url(images/2021/Img6.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Flamingo</h2>
+
+											</div>
 										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Line 1 -->
+					<div class="col-md-5">
+						<div class="blog-entry animate-box">
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img8.jpg">
+								<div class="h-25 blog-img" style="background-image: url(images/portrait/img8.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Movies</span></p> -->
+										<h2 class="head-article">Bleu cheveux</h2>
+
 									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="blog-entry animate-box">
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/landscape/img3.jpg">
+								<div class="blog-img" style="background-image: url(images/landscape/img3.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Healthy</span></p> -->
+										<h2 class="head-article">Walk to Home</h2>
+
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- line 2 -->
+					<div class="col-md-4">
+						<div class="blog-entry animate-box">
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img1.jpg">
+								<div class="blog-img blog-portrait"
+									style="background-image: url(images/portrait/img1.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Movies</span></p> -->
+										<h2 class="head-article">Venezia</h2>
+
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="blog-entry animate-box">
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/landscape/img2.jpg">
+								<div class="blog-img" style="background-image: url(images/landscape/img2.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Healthy</span></p> -->
+										<h2 class="head-article">Starry Night</h2>
+
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- line 3  and 4-->
+					<div class="col-md-5">
+
+						<div class="blog-entry animate-box">
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img6.jpg">
+								<div class="blog-img blog-portrait-mid"
+									style="background-image: url(images/portrait/img6.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Sports</span></p> -->
+										<h2 class="head-article">Ballerina</h2>
+
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<div class="blog-entry animate-box">
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/portrait/img12.jpg">
+										<div class="blog-img blog-img-small-portrait"
+											style="background-image: url(images/portrait/img12.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Scream</h2>
+
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="blog-entry animate-box">
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/landscape/img6.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/landscape/img6.jpg);">
+											<div class="desc text-center">
+												<h2 class="head-article">Sail</h2>
+
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<!-- small squares 	 -->
+						<div class="row">
+							<div class="col-md-5">
+								<div class="blog-entry animate-box">
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/landscape/img9.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/landscape/img9.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Butterfly</h2>
+
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="blog-entry animate-box">
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/portrait/img11.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/portrait/img11.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Rose Beach</h2>
+
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-10">
+								<div class="blog-entry animate-box">
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/landscape/img4.jpg">
+										<div class="blog-img" style="background-image: url(images/landscape/img4.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Lighthouse</h2>
+
+											</div>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -363,128 +421,144 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-landscape" style="background-image: url(images/landscape/img5.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>Place</span></p> -->
-											<h2 class="head-article"><a href="images/landscape/img5.jpg" class="image-popup-link">Turtle</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/landscape/img5.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/landscape/img5.jpg);">
+											<div class="desc text-center">
+												<h2 class="head-article">Turtle</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="col-md-5">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-portrait" style="background-image: url(images/portrait/img5.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>auto</span></p> -->
-											<h2 class="head-article"><a href="images/portrait/img5.jpg" class="image-popup-link">Tour De Eiffel</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/portrait/img5.jpg">
+										<div class="blog-img blog-img-small-portrait"
+											style="background-image: url(images/portrait/img5.jpg);">
+											<div class="desc text-center">
+
+												<h2 class="head-article">Tour De Eiffel</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							<div class="col-md-7">
 								<div class="blog-entry animate-box">
-									<div class="blog-img blog-img-small-landscape" style="background-image: url(images/landscape/img7.jpg);">
-										<div class="desc text-center">
-											<!-- <p class="tag"><span>Sports</span></p> -->
-											<h2 class="head-article"><a href="images/landscape/img7.jpg" class="image-popup-link">The Taj</a></h2>
-											<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+									<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+										href="images/landscape/img7.jpg">
+										<div class="blog-img blog-img-small-landscape"
+											style="background-image: url(images/landscape/img7.jpg);">
+											<div class="desc text-center">
+												<!-- <p class="tag"><span>Sports</span></p> -->
+												<h2 class="head-article">The Taj</h2>
+
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-5">
 						<div class="blog-entry animate-box">
-							<div class="blog-img blog-portrait-mid" style="background-image: url(images/portrait/img3.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Movies</span></p> -->
-									<h2 class="head-article"><a href="images/portrait/img3.jpg" class="image-popup-link">Venice Streets</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img3.jpg">
+								<div class="blog-img blog-portrait-mid"
+									style="background-image: url(images/portrait/img3.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Movies</span></p> -->
+										<h2 class="head-article">Venice Streets</h2>
+
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 
 					<!-- Line 6 -->
 					<div class="col-md-6">
 						<div class="blog-entry animate-box">
-							<div class="blog-img" style="background-image: url(images/landscape/img1.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Movies</span></p> -->
-									<h2 class="head-article"><a href="images/landscape/img1.jpg" class="image-popup-link">Rose Cheveux</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/landscape/img1.jpg">
+								<div class="blog-img" style="background-image: url(images/landscape/img1.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Movies</span></p> -->
+										<h2 class="head-article">Rose Cheveux</h2>
+
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="col-md-5">
 						<div class="blog-entry animate-box">
-							<div class="blog-img blog-portrait-mid" style="background-image: url(images/portrait/img10.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Healthy</span></p> -->
-									<h2 class="head-article"><a href="images/portrait/img10.jpg" class="image-popup-link">Jaune Cheveux</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p> -->
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img10.jpg">
+								<div class="blog-img blog-portrait-mid"
+									style="background-image: url(images/portrait/img10.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Healthy</span></p> -->
+										<h2 class="head-article">Jaune Cheveux</h2>
+
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 
 					<!-- Line 7 -->
 					<div class="col-md-3">
 						<div class="blog-entry animate-box">
-							<div class="blog-img blog-img-small-portrait" style="background-image: url(images/portrait/img4.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Place</span></p> -->
-									<h2 class="head-article"><a href="images/portrait/img4.jpg" class="image-popup-link">Playtime</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img4.jpg">
+								<div class="blog-img blog-img-small-portrait"
+									style="background-image: url(images/portrait/img4.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Place</span></p> -->
+										<h2 class="head-article">Playtime</h2>
+
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="col-md-2">
 						<div class="blog-entry animate-box">
-							<div class="blog-img blog-img-small-portrait" style="background-image: url(images/portrait/img21.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Place</span></p> -->
-									<h2 class="head-article"><a href="images/portrait/img21.jpg" class="image-popup-link">The Peacock</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/portrait/img21.jpg">
+								<div class="blog-img blog-img-small-portrait"
+									style="background-image: url(images/portrait/img21.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Place</span></p> -->
+										<h2 class="head-article">The Peacock</h2>
+
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="blog-entry animate-box">
-							<div class="blog-img blog-img-small-portrait" style="background-image: url(images/landscape/img8.jpg);">
-								<div class="desc text-center">
-									<!-- <p class="tag"><span>Place</span></p> -->
-									<h2 class="head-article"><a href="images/landscape/img8.jpg" class="image-popup-link">Mosaic Birds</a></h2>
-									<!-- <p>Even the all-powerful Pointing has no control about</p> -->
+							<a data-fancybox="gallery" data-caption="Size : cm x cm, Medium : Acrylic on Canvas"
+								href="images/landscape/img8.jpg">
+								<div class="blog-img blog-img-small-portrait"
+									style="background-image: url(images/landscape/img8.jpg);">
+									<div class="desc text-center">
+										<!-- <p class="tag"><span>Place</span></p> -->
+										<h2 class="head-article">Mosaic Birds</h2>
+
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
-
-
-					<!-- </div> -->
-
-
-					<!-- Page Counter -->
-
-					<!-- <div class="row">
-		<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-		<ul class="pagination">
-		<li class="disabled"><a href="#">&laquo;</a></li>
-		<li class="active"><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">&raquo;</a></li>
-	</ul>
-</div> -->
 				</div>
 			</div>
 		</div>
