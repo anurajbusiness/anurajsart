@@ -1199,9 +1199,27 @@ article {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     border-radius: 30px; }
+  .side #message {
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    color: #333333 !important;
+    margin-bottom: 2px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px; }
   .side .btn-subscribe {
     position: inherit;
     width: 100%;
+    right: 0;
+    padding: 10px !important;
+    margin-bottom: 2em; }
+  .side .btn-send-message {
+    position: inherit;
+    width: 500%;
     right: 0;
     padding: 10px !important;
     margin-bottom: 2em; }
