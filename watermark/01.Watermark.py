@@ -36,7 +36,7 @@ def applyWatermark(imgName):
     # return img
     im1 = Image.open(resize_folder_output_path+'/'+imgName)
     imTemp = Image.open(resize_folder_output_path+'/'+imgName)
-    im2 = Image.open('33.png')
+    im2 = Image.open('45.png')
     ximg, yimg = im1.size[0], im1.size[1]
     ximg2, yimg2 = im2.size[0], im2.size[1]
 
