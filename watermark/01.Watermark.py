@@ -6,7 +6,7 @@ import os
 resize_folder_path = '1.Source'
 resize_folder_output_path = '2.Output'
 quality_val = 35
-rez4k = 2163
+rez4k = 1750
 
 def getResizedValues(tempImage):
     x,y=tempImage.size[0],tempImage.size[1]
@@ -75,9 +75,9 @@ for img_name in imageList:
     # image = getResizedValues(image)  
     image = getResizedValues(image)
     image.save(resize_folder_output_path+'/'+img_name, 'JPEG', quality=70)
-    applyWatermark(img_name)
-    image.close()
-    os.remove(resize_folder_output_path+'/'+img_name)
+    # applyWatermark(img_name)
+    # image.close()
+    # os.remove(resize_folder_output_path+'/'+img_name)
 
 
 
