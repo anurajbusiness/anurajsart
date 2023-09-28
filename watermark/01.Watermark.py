@@ -16,11 +16,11 @@ def getResizedValues(tempImage):
     else:
         x = x/y*rez4k
         y = rez4k
-    return tempImage.resize((int(x), int(y)), Image.ANTIALIAS)
+    return tempImage.resize((int(x), int(y)), Image.LANCZOS)
 
 imageList = [];
 for file in os.listdir(resize_folder_path):
-    if file.endswith(".jpg") or file.endswith(".jpeg"):
+    if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith(".JPEG"):
         # print("Filename : ", file)
         # print(os.path.join("/mydir", file))
         imageList.append(file)
